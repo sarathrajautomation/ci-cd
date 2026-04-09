@@ -3,7 +3,7 @@ name: Run Node Every 5 Minutes
 
 on:
   schedule:
-    - cron: "* * * * *" # Runs every minute
+    - cron: "0 10 * * *" # Runs every minute
   workflow_dispatch: # Allows manual trigger
 
 jobs:
