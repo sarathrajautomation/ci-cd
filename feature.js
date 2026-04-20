@@ -31,12 +31,12 @@ export async function callApi() {
         formData.append("L2tribeId", "2");
 
         const response = await axios.post(
-            "https://unitedtribes.techcedence.net/business-api/api/moments/upload",
+            "https://unitedtribes.com/business-api/api/moments/upload",
             formData,
             {
                 headers: {
                     ...formData.getHeaders(), // ✅ VERY IMPORTANT
-                    authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEyMywiYnVja2V0TmFtZSI6IkFSVFgxOVA2RjMiLCJwYXNzd29yZFRva2VuRXhwIjoiMjAyNi0wMy0yOCAxMTo1MTo1MSIsImlhdCI6MTc3NDYxMjMxMX0.DW6AW7-WMOGAv9Fba93uJzStmpCUic8Em53lDstKCsE"
+                    authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzY3LCJidWNrZXROYW1lIjoiV0lMQUNJNE1WRyIsInBhc3N3b3JkVG9rZW5FeHAiOiIyMDI2LTA0LTIxIDA1OjM2OjEyIiwiaWF0IjoxNzc2NjYzMzcyfQ.ynjeQXcCq4l36ap3VomEsNXFQAUhyR_yaNkxvcLjTLw"
                 },
                 maxBodyLength: Infinity // ✅ avoids large file issues
             }
